@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<script src="denemeler_scripts.js"></script>
+		<title>
+			e-Staj Günlüğü
+		</title>
+		
+	</head>
+	
+	<body style="background-color:#9f9fa0">
+	
+	<!--BACK TO TOP-->
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Yukarı</button>
+
+	<div style="background-color:black; color:white; padding:30px; border-radius:16px">
+		<div class="topnav" style="border-radius:16px">
+		  <a href="hakkimda.html">Hakkımda</a>
+		  <a href="iletisim.html">İletişim</a>
+		  <a class="active" href="js_deneme.html">JS Denemler</a>
+		  <a href="gunler.html">Günler</a>
+		  <a href="ana_sayfa.html">Ana Sayfa</a>
+		</div>
+	</div>
+	
+	</br>
+	<!-- BODY KISIMLARI-->
+		<table id="body_table">
+		<!-- BODY SOL-->
+			<td class="body_edge"></td>
+			<!-- BODY MERKEZ-->
+			<td id="js_deneme_body_center" style="background-color:#c4c4c4">
+									<a id="random" style="color:#c4c4c4">a</a>
+									<a id="kalan" style="color:#c4c4c4">a</a>
+									<a id="kalan2" style="color:#c4c4c4">a</a>
+									<a id="kalan3" style="color:#c4c4c4">a</a>
+									<a id="kalan4" style="color:#c4c4c4">a</a>
+									<a id="kalan5" style="color:#c4c4c4">a</a>
+									<a id="selected1" style="color:#c4c4c4">a</a>
+									<a id="selected2" style="color:#c4c4c4">a</a>
+									<a id="selected3" style="color:#c4c4c4">a</a>
+									<a id="selected4" style="color:#c4c4c4">a</a>
+									<a id="selected5" style="color:#c4c4c4">a</a>
+				<div id="example1" align="center">
+					
+					<br>
+					<table>
+						<tr>
+							<td class="examples" align="center" >
+								<br>
+								<p style="text-align:left; padding-left:20px;"><b><u>Örnek 1 &#40 Para Yatırıp Çekme &#41 </u></b></p>
+								<input id="miktar"></input> </br></br>
+								<button class="button_1" id="yatir" onclick="yatirFunction(); document.getElementById('miktar').value =0">YATIR</button>
+								<button class="button_1" id="cek" onclick="cekFunction(); document.getElementById('miktar').value =0"">ÇEK</button></br></br>
+								<label>Bakiye: </label>
+								<p id="bakiye">0</p>
+								
+								<textarea id="example1_log" readonly>
+								</textarea>
+							</td>
+						</tr>
+						
+						<tr>
+							<td class="examples" align="center">	
+								<br>
+								<p style="text-align:left; padding-left:20px;"><b><u>Örnek 2 &#40 Tic Tac Toe &#41</u></b></p>
+								
+								
+								<p id="demo"></p><br>
+								<p id="rakam"></p>
+								<p id="p1"></p>
+							
+								<table id="examples2_table" border="1" cellpadding="10">
+									<tbody>
+										<tr>
+											<td><button class="button_1" id="1" class="examples2_button" onclick="hamle_GeneratorFunction(); bg_Color0();">1</button><br><p id="kare1"></p></td>
+											<td><button class="button_1" id="2" class="examples2_button" onclick="hamle_GeneratorFunction(); bg_Color1();">2</button><br><p id="kare2"></p></td>
+											<td><button class="button_1" id="3" class="examples2_button" onclick="hamle_GeneratorFunction(); bg_Color2();">3</button><br><p id="kare3"></p></td>
+										</tr>
+										<tr>
+											<td><button class="button_1" id="4" class="examples2_button" onclick="hamle_GeneratorFunction(); bg_Color3();">4</button><br><p id="kare4"></p></td>
+											<td><button class="button_1" id="5" class="examples2_button" onclick="hamle_GeneratorFunction(); bg_Color4();">5</button><br><p id="kare5"></p></td>
+											<td><button class="button_1" id="6" class="examples2_button" onclick="hamle_GeneratorFunction(); bg_Color5();">6</button><br><p id="kare6"></p></td>
+										</tr>
+										<tr>
+											<td><button class="button_1" id="7" class="examples2_button" onclick="hamle_GeneratorFunction(); bg_Color6();">7</button><br><p id="kare7"></p></td>
+											<td><button class="button_1" id="8" class="examples2_button" onclick="hamle_GeneratorFunction(); bg_Color7();">8</button><br><p id="kare8"></p></td>
+											<td><button class="button_1" id="9" class="examples2_button" onclick="hamle_GeneratorFunction(); bg_Color8();">9</button><br><p id="kare9"></p></td>
+										</tr>
+									</tbody>
+								</table><br>
+								<button class="button_1" onclick="check()">Kontrol Et!</button>
+								<button class="button_1" onclick="again()">Yeniden Oyna!</button><br>
+							</td>
+						</tr>
+						
+						<tr>
+							<td class="examples" align="center" >
+								<br>
+								<p style="text-align:left; padding-left:20px;"><b><u>Örnek 3 </u></b></p><br>
+								<table id="examples3_table" border="1" cellpadding="10">
+									<tbody>
+										<tr >
+											<td><button id="3_0" onclick="degistir0()">0</button><img id="img1" class="alan"></td>
+											<td><button id="3_1" onclick="degistir1()">1</button><img id="img2" class="alan"></td>
+											<td><button id="3_2" onclick="degistir2()">2</button><img id="img3" class="alan"></td>
+											<td><button id="3_3" onclick="degistir3()">3</button><img id="img4" class="alan"></td>
+											<td><button id="3_4" onclick="degistir4()">4</button><img id="img5" class="alan"></td>
+											
+										</tr>
+										<tr>
+											<td><button id="3_5" onclick="degistir5()">5</button><img id="img6" class="alan"></td>
+											<td><button id="3_6" onclick="degistir6()">6</button><img id="img7" class="alan"></td>
+											<td><button id="3_7" onclick="degistir7()">7</button><img id="img8" class="alan"></td>
+											<td><button id="3_8" onclick="degistir8()">8</button><img id="img9" class="alan"></td>
+											<td><button id="3_9" onclick="degistir9()">9</button><img id="img10" class="alan"></td>
+											
+										</tr>
+										<tr>
+											<td><button id="3_10" onclick="degistir10()">10</button><img id="img11" class="alan"></td>
+											<td><button id="3_11" onclick="degistir11()">11</button><img id="img12" class="alan"></td>
+											<td><button id="3_12" onclick="degistir12()">12</button><img id="img13" class="alan"></td>
+											<td><button id="3_13" onclick="degistir13()">13</button><img id="img14" class="alan"></td>
+											<td><button id="3_14" onclick="degistir14()">14</button><img id="img15" class="alan"></td>
+											
+										</tr>
+										<tr>
+											<td><button id="3_15" onclick="degistir15()">15</button><img id="img16" class="alan"></td>
+											<td><button id="3_16" onclick="degistir16()">16</button><img id="img17" class="alan"></td>
+											<td><button id="3_17" onclick="degistir17()">17</button><img id="img18" class="alan"></td>
+											<td><button id="3_18" onclick="degistir18()">18</button><img id="img19" class="alan"></td>
+											<td><button id="3_19" onclick="degistir19()">19</button><img id="img20" class="alan"></td>
+											
+										</tr>
+										<tr>
+											<td><button id="3_20" onclick="degistir20()">20</button><img id="img21" class="alan"></td>
+											<td><button id="3_21" onclick="degistir21()">21</button><img id="img22" class="alan"></td>
+											<td><button id="3_22" onclick="degistir22()">22</button><img id="img23" class="alan"></td>
+											<td><button id="3_23" onclick="degistir23()">23</button><img id="img24" class="alan"></td>
+											<td><button id="3_24" onclick="degistir24()">24</button><img id="img25" class="alan"></td>
+											
+										</tr>
+										
+									</tbody>
+								</table><br>
+								<button class="button_1" onclick="senkronize()">Senkronize Et!</button>
+								<button class="button_1" onclick="again()">Yeniden Oyna!</button><br>
+							
+							</td>
+						</tr>
+						
+						<tr>
+							<td class="examples" align="center"  style="padding-left:25px;padding-right:25px;">
+								<br>
+								<p style="text-align:left; padding-left:20px;"><b><u>Örnek 4 </u></b></p><br>
+									
+									<fieldset style="spacing-left:100px; border-radius:10px;">
+									  <legend><b><u>Your Deck</u></b></legend>
+									  
+									  <table>
+										<tbody>
+											<tr>
+												<td style="padding-left:10px";><b><u>1.KART</u></b></td>
+												<td style="padding-left:10px";><b><u>2.KART</u></b></td>
+												<td style="padding-left:10px";><b><u>3.KART</u></b></td>
+												<td style="padding-left:10px";><b><u>4.KART</u></b></td>
+												<td style="padding-left:10px";><b><u>5.KART</u></b></td>
+												<td style="padding-left:10px";><b><u>TOPLAM</u></b></td>
+											</tr>
+											<tr style="text-align:center";>
+												<td id="card1">-</td>
+												<td id="card2">-</td>
+												<td id="card3">-</td>
+												<td id="card4">-</td>
+												<td id="card5">-</td>
+												<td id="total">-</td>
+											</tr>
+										</tbody>
+									</table><br>
+									  <button id="cek" onclick="cek();">ÇEK</button>
+									  <button onclick="pass();">PAS</button>
+									  
+									  <button onclick="refresh();">YENİLE</button>
+									</fieldset>
+										<p id="deste" style="color:#aab8c1;overflow: visible">Deste</p>
+									    <p id="pc_total" style="color:#aab8c1;overflow: visible">PC Toplam</p>
+									    <p id="cekilen" style="color:#aab8c1;overflow: visible">Çekilen</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</td>
+			<!-- BODY SAĞ-->
+			<td class="body_edge"></td>
+		</table>
+		
+	</body
+</html>

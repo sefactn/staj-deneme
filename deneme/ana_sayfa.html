@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<script src="scripts.js"></script>
+		<title>
+			e-Staj Günlüğü
+		</title>
+		
+	</head>
+	
+	<body style="background-color:#9f9fa0">
+	
+	<!--BACK TO TOP-->
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Yukarı</button>
+
+	<div style="background-color:black; color:white; padding:30px; border-radius:16px">
+		<div class="topnav" style="border-radius:16px">
+		  <a href="hakkimda.html">Hakkımda</a>
+		  <a href="iletisim.html">İletişim</a>
+		  <a href="js_deneme.html">JS Denemler</a>
+		  <a href="gunler.html">Günler</a>
+		  <a class="active" href="ana_sayfa.html">Ana Sayfa</a>
+		</div>
+	</div>
+	
+	</br>
+	<!-- BODY KISIMLARI-->
+		<table id="body_table">
+		<!-- BODY SOL-->
+			<td class="body_edge"></td>
+			<!-- BODY MERKEZ-->
+			<td class="body_center" style="background-color:#c4c4c4">
+				</br>
+				<h2>GÜNLER</h2>
+				
+				<!-- GÜN GENERATOR
+				<script>
+					var gun=0;
+					for(i=0; i<=13; i++){
+						gun=gun+1;
+						document.write("Gün:"+gun);
+						document.write.src='img/ok.png';
+					}
+				</script>
+				-->
+				
+					<table id="body_table">
+						<!-- SATIR 1-->
+						<tr>
+							<td class="days" >
+								<img src="img/ok.png"></br>
+									GÜN 1 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun1_aciklama()">GÖSTER</button>
+							</td>
+							<td class="days">
+								<img src="img/ok.png"></br>
+									GÜN 2 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun2_aciklama()">GÖSTER</button>
+									
+							</td>
+							<td class="days">
+								<img src="img/ok.png"></br>
+									GÜN 3 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun3_aciklama()">GÖSTER</button>
+							</td>
+						</tr>
+						
+						<!-- SATIR 2-->
+						<tr>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 4 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun4_aciklama()">GÖSTER</button>
+								
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 5 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun5_aciklama()">GÖSTER</button>
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 6 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun6_aciklama()">GÖSTER</button>
+							</td>
+						</tr>
+						<!-- SATIR 3-->
+						<tr>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 7 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun7_aciklama()">GÖSTER</button>
+								
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 8 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun8_aciklama()">GÖSTER</button>
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 9</br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun9_aciklama()">GÖSTER</button>
+							</td>
+						</tr>
+						<!-- SATIR 4-->
+						<tr>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 10 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun10_aciklama()">GÖSTER</button>
+								
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 11 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun11_aciklama()">GÖSTER</button>
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 12 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun12_aciklama()">GÖSTER</button>
+							</td>
+						</tr>
+						<!-- SATIR 5-->
+						<tr>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 13 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun13_aciklama()">GÖSTER</button>
+								
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 14 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun14_aciklama()">GÖSTER</button>
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 15 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun15_aciklama()">GÖSTER</button>
+							</td>
+						</tr>
+						<!-- SATIR 6-->
+						<tr>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 16 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun16_aciklama()">GÖSTER</button>
+								
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 17 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun17_aciklama()">GÖSTER</button>
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 18 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun18_aciklama()">GÖSTER</button>
+							</td>
+						</tr>
+						<!-- SATIR 7-->
+						<tr>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 19</br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun19_aciklama()">GÖSTER</button>
+								
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 20 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun20_aciklama()">GÖSTER</button>
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 21 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun21_aciklama()">GÖSTER</button>
+							</td>
+						</tr>
+						<!-- SATIR 8-->
+						<tr>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 22</br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun22_aciklama()">GÖSTER</button>
+								
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 23 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun23_aciklama()">GÖSTER</button>
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 24 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun24_aciklama()">GÖSTER</button>
+									
+							</td>
+						</tr>
+						<!-- SATIR 9-->
+						<tr>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 25 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun25_aciklama()">GÖSTER</button>
+	
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 26 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun26_aciklama()">GÖSTER</button>
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 27 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun27_aciklama()">GÖSTER</button>
+							</td>
+						</tr>
+						<!-- SATIR 10-->
+						<tr>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 28 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun28_aciklama()">GÖSTER</button>
+								
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 29 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun29_aciklama()">GÖSTER</button>
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 30 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun30_aciklama()">GÖSTER</button>
+							</td>
+						</tr>
+						<!-- SATIR 11-->
+						<tr>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 31 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun31_aciklama()">GÖSTER</button>	
+								
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 32 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun32_aciklama()">GÖSTER</button>
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 33 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun33_aciklama()">GÖSTER</button>
+							</td>
+						</tr>
+						<!-- SATIR 12-->
+						<tr>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 34 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun34_aciklama()">GÖSTER</button>	
+								
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 35 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun35_aciklama()">GÖSTER</button>
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 36 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun36_aciklama()">GÖSTER</button>
+							</td>
+						</tr>
+						<!-- SATIR 13-->
+						<tr>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 37 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun37_aciklama()">GÖSTER</button>
+								
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 38 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun38_aciklama()">GÖSTER</button>
+							</td>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 39 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun39_aciklama()">GÖSTER</button>
+							</td>
+						</tr>
+						<!-- SATIR 14-->
+						<tr>
+							<td class="days">
+								<img src="img/non.png"></br>
+									GÜN 40 </br>
+									<textarea  readonly class="aciklama"></textarea>
+									<button onclick="gun40_aciklama()">GÖSTER</button>
+							</td>
+						</tr>
+					</table>
+			</td>
+			<!-- BODY SAĞ-->
+			<td class="body_edge"></td>
+		</table>
+		
+	</body
+</html>

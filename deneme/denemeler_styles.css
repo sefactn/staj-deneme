@@ -1,0 +1,145 @@
+body{
+	font-family:Arial;
+}
+
+tr{
+	padding-bottom:10px;
+}
+
+#header_menu_div{
+	text-align:center;
+	background-color:black;
+}
+#header_menu_table{
+	margin: 0 auto; 
+	border: 1px solid black;
+	text-align:center;
+}
+#body_table{
+	padding-left:10px;
+	padding-right:10px;
+}
+.body_edge{
+	width: 800px;
+	text-align:left;
+	vertical-align:top;
+}
+.body_center{
+	width: 600px;
+	border: 1px black solid;
+	text-align: center;
+	border-radius:5px;
+}
+.days{
+	
+	height: 50px;
+	border: 1px black solid;
+	text-align: center;
+	position: relative;
+	background-color:#c8daf7;
+	border-radius:5px;
+	max-width:250px;
+}	
+.aciklama{
+	color:blue;
+	width: 200px;
+	height: 110px;
+	background-color: lightblue;
+	overflow-y: hidden;
+}
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+/*BACK TO TOP BUTTON*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  border:1px black solid;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/*TOP NAVIGATOR BAR*/
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+textarea{
+resize: none;
+width:250px;
+}
+
+button{
+	background-color:#71c3fa;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #37acfa;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:10px;
+	padding:12px 22px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+button:hover{
+	background-color:#50b6fa;
+}
+
+button:active{
+	position:relative;
+	top:1px;
+}
+
+/*scroll*/
+div.ex1 {
+  background-color: lightblue;
+  height: 40px;
+  width: 200px;
+  overflow-y: scroll;
+}
+
+/*JS Denemeler*/
+
+#example1{
+width:500px;
+height:500px;
+}
